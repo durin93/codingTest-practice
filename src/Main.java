@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
+/*
 
         Azimuth azimuth = new Azimuth();
         String[] instructions = {"LEFT","LEFT","TURN AROUND"};
@@ -28,5 +29,12 @@ public class Main {
         System.out.println(punctuation.calc(problem3));
         System.out.println(punctuation.calc(problem4));
         System.out.println(punctuation.calc(problem5));
+*/
+
+        String[] words = {"abca","zbxz","opqr"};
+        SameWord sameWord = new SameWord();
+
+        System.out.println(sameWord.calc(words));
+
     }
 }
