@@ -31,10 +31,17 @@ public class Main {
         System.out.println(punctuation.calc(problem5));
 */
 
+/*
         String[] words = {"abca","zbxz","opqr"};
         SameWord sameWord = new SameWord();
 
         System.out.println(sameWord.calc(words));
+*/
+
+        BinaryNum.binary(7);
+
+
+
 
     }
 }
