@@ -72,6 +72,13 @@ public class Main {
             System.out.print(num + ",");
         }
 
+        System.out.println();
+        temp = QuickSort.quickSort(temp,0,temp.length-1);
+
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
+
 
     }
 }
