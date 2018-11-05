@@ -1,3 +1,5 @@
+import org.omg.CORBA.INTERNAL;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,10 +40,22 @@ public class Main {
         System.out.println(sameWord.calc(words));
 */
 
-        BinaryNum.binary(7);
+        /*SingleLinkedList<Integer> lis = new SingleLinkedList<>();
+        lis.add(0, 1);
+        lis.add(2);
 
+        System.out.println(lis.get(0));
+        System.out.println(lis.get(1));
+*/
 
-
-
+        int temp[] = {3, 5, 7, 9, 1, 8};
+        temp = BubbleSort.bubbleSortAsc(temp);
+        for (int num : temp) {
+            System.out.print(num+",");
+        }
+        temp = BubbleSort.bubbleSortDesc(temp);
+        for (int num : temp) {
+            System.out.print(num+",");
+        }
     }
 }
