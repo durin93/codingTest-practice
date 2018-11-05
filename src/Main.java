@@ -51,11 +51,27 @@ public class Main {
         int temp[] = {3, 5, 7, 9, 1, 8};
         temp = BubbleSort.bubbleSortAsc(temp);
         for (int num : temp) {
-            System.out.print(num+",");
+            System.out.print(num + ",");
         }
+        System.out.println();
         temp = BubbleSort.bubbleSortDesc(temp);
         for (int num : temp) {
-            System.out.print(num+",");
+            System.out.print(num + ",");
         }
+        System.out.println();
+        temp = SelectionSort.selectSortAsc(temp);
+
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
+
+        System.out.println();
+        temp = SelectionSort.selectSortDesc(temp);
+
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
+
+
     }
 }
