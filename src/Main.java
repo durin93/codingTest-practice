@@ -78,7 +78,7 @@ public class Main {
 
         System.out.println();
         System.out.println("퀵정렬ASC");
-        temp = QuickSort.quickSort(temp,0,temp.length-1);
+        temp = QuickSort.quickSort(temp, 0, temp.length - 1);
 
         for (int num : temp) {
             System.out.print(num + ",");
@@ -91,6 +91,13 @@ public class Main {
             System.out.print(num + ",");
         }
 
+        System.out.println();
+        System.out.println("합병정렬ASC");
+        MergeSort.mergeSort2(temp,0,temp.length-1);
+
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
 
 
     }
