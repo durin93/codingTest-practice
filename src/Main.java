@@ -112,6 +112,10 @@ public class Main {
         System.out.println(LinearSearch.search(temp,9)+"인덱스 에 있다.");
 
 
+  System.out.println("팩토리얼 3" );
+        System.out.println(Factorial.factorial(3));
+
+
 
     }
 }
