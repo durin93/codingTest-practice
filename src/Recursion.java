@@ -1,4 +1,4 @@
-public class Factorial {
+public class Recursion {
 
 
     public static int factorial(int num) {
@@ -10,6 +10,17 @@ public class Factorial {
         }
 
         return num * factorial(num - 1);
+    }
+
+    public static int fibonacci(int num){
+
+        if(num<=1){
+            return num;
+        }
+
+        return fibonacci(num-1)+fibonacci(num-2);
+
+
     }
 
 }

@@ -1,11 +1,3 @@
-import org.omg.CORBA.INTERNAL;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
-import java.util.regex.Pattern;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -93,7 +85,7 @@ public class Main {
 
         System.out.println();
         System.out.println("합병정렬ASC");
-        MergeSort.mergeSort2(temp,0,temp.length-1);
+        MergeSort.mergeSort2(temp, 0, temp.length - 1);
 
         for (int num : temp) {
             System.out.print(num + ",");
@@ -101,20 +93,22 @@ public class Main {
 
 
         System.out.println();
-        MergeSort.mergeSort2(temp,0,temp.length-1);
+        MergeSort.mergeSort2(temp, 0, temp.length - 1);
         for (int num : temp) {
             System.out.print(num + ",");
         }
-        System.out.println("이진탐색(정렬된배열필수) 9찾기" );
-        System.out.println(BinarySearch.search(temp,9)+"인덱스 에 있다.");
+        System.out.println("이진탐색(정렬된배열필수) 9찾기");
+        System.out.println(BinarySearch.search(temp, 9) + "인덱스 에 있다.");
 
-        System.out.println("순차(선형)탐색 9찾기" );
-        System.out.println(LinearSearch.search(temp,9)+"인덱스 에 있다.");
+        System.out.println("순차(선형)탐색 9찾기");
+        System.out.println(LinearSearch.search(temp, 9) + "인덱스 에 있다.");
 
 
-  System.out.println("팩토리얼 3" );
-        System.out.println(Factorial.factorial(3));
+        System.out.println("팩토리얼 3");
+        System.out.println(Recursion.factorial(3));
 
+        System.out.println("피보나치 8");
+        System.out.println(Recursion.fibonacci(8));
 
 
     }
