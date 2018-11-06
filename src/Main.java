@@ -108,5 +108,10 @@ public class Main {
         System.out.println("이진탐색(정렬된배열필수) 9찾기" );
         System.out.println(BinarySearch.search(temp,9)+"인덱스 에 있다.");
 
+        System.out.println("순차(선형)탐색 9찾기" );
+        System.out.println(LinearSearch.search(temp,9)+"인덱스 에 있다.");
+
+
+
     }
 }
