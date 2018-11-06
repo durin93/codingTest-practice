@@ -111,5 +111,9 @@ public class Main {
         System.out.println(Recursion.fibonacci(8));
 
 
+        System.out.println("10까지 숫자중 소수 구하기");
+        Prime.getPrime(10);
+
+
     }
 }
