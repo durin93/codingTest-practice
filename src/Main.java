@@ -100,5 +100,13 @@ public class Main {
         }
 
 
+        System.out.println();
+        MergeSort.mergeSort2(temp,0,temp.length-1);
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
+        System.out.println("이진탐색(정렬된배열필수) 9찾기" );
+        System.out.println(BinarySearch.search(temp,9)+"인덱스 에 있다.");
+
     }
 }

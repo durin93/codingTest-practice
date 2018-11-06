@@ -1,5 +1,8 @@
 public class SelectionSort {
 
+    /*선택정렬이란
+    최솟값을 구하고 그것을 맨앞자리에 넣어줌을 반복하는 정렬입니다. 이것도 시간복잡도는 n^2이군요
+    */
     public static int[] selectSortAsc(int[] items) {
 
 
