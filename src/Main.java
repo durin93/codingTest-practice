@@ -50,15 +50,18 @@ public class Main {
 
         int temp[] = {3, 5, 7, 9, 1, 8};
         temp = BubbleSort.bubbleSortAsc(temp);
+        System.out.println("버블정렬ASC");
         for (int num : temp) {
             System.out.print(num + ",");
         }
         System.out.println();
+        System.out.println("버블정렬DESC");
         temp = BubbleSort.bubbleSortDesc(temp);
         for (int num : temp) {
             System.out.print(num + ",");
         }
         System.out.println();
+        System.out.println("선택정렬ASC");
         temp = SelectionSort.selectSortAsc(temp);
 
         for (int num : temp) {
@@ -66,6 +69,7 @@ public class Main {
         }
 
         System.out.println();
+        System.out.println("선택정렬DESC");
         temp = SelectionSort.selectSortDesc(temp);
 
         for (int num : temp) {
@@ -73,11 +77,20 @@ public class Main {
         }
 
         System.out.println();
+        System.out.println("퀵정렬ASC");
         temp = QuickSort.quickSort(temp,0,temp.length-1);
 
         for (int num : temp) {
             System.out.print(num + ",");
         }
+        System.out.println();
+        System.out.println("삽입정렬ASC");
+        temp = InsertionSort.insertionSort(temp);
+
+        for (int num : temp) {
+            System.out.print(num + ",");
+        }
+
 
 
     }

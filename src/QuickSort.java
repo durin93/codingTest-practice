@@ -1,40 +1,44 @@
 public class QuickSort {
 
-    public static int[] quickSort(int[] items, int left, int right) {
+   public static int[] quickSort(int[] arr, int left, int right){
 
-        if(left<right) {
-            int partionIndex = partition(items, left, right);
+       if(left < right){
 
-            quickSort(items, left, partionIndex - 1);
-            quickSort(items, partionIndex + 1, right);
-        }
-        return items;
-    }
+           int pivotIndex = partition(arr, left, right);
 
-    public static int partition(int[] items, int left, int right){
+           quickSort(arr, left, pivotIndex-1);
+           quickSort(arr, pivotIndex+1, right);
+
+       }
 
 
-        int pivotValue = items[(left+right)/2];
+       return arr;
+   }
+
+   public static int partition(int[] arr, int left, int right){
+
+       int pivotNum = arr[(left+right)/2];
+
+       while(left < right){
+           while(arr[left] < pivotNum && left < right)
+               left++;
+
+           while(arr[right] > pivotNum && left < right)
+               right--;
 
 
-        while(left < right){
-
-            while(items[left] < pivotValue && left< right)
-                left++;
-
-            while(items[right] > pivotValue && left< right)
-                right--;
-
-            if(left<right){
-                int temp = items[left];
-                items[left] = items[right];
-                items[right] = temp;
-            }
-
-        }
+           if(left < right){
+               int temp = arr[left];
+               arr[left] = arr[right];
+               arr[right] = temp;
+           }
 
 
-        return left;
-    }
+
+       }
+
+       return left;
+   }
+
 
 }
