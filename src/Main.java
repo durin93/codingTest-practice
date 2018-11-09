@@ -1,3 +1,8 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -114,6 +119,47 @@ public class Main {
         System.out.println("10까지 숫자중 소수 구하기");
         Prime.getPrime(10);
 
+
+        Map<Integer, Integer> map1 = new HashMap();
+        Map<Integer, Integer> map2 = new TreeMap();
+        Map<Integer, Integer> map3 = new LinkedHashMap<>();
+
+
+        map1.put(2, 2);
+        map1.put(3, 3);
+        map1.put(1, 1);
+
+        map2.put(2, 2);
+        map2.put(3, 3);
+        map2.put(1, 1);
+
+
+        map3.put(1, 1);
+        map3.put(3, 15);
+        map3.put(4, 11);
+        map3.put(2, 12);
+
+        for (Integer a : map1.keySet()) {
+            System.out.print(a + " ");
+        }
+
+        System.out.println("---");
+
+        for (Integer a : map2.keySet()) {
+            System.out.print(a + " ");
+        }
+
+        System.out.println("---");
+
+        for (Integer a : map3.keySet()) {
+            System.out.print(a + " ");
+        }
+
+        System.out.println();
+        System.out.println(ReverseCheck.checkString("letl"));
+        System.out.println(ReverseCheck.checkString("level"));
+        System.out.println(ReverseCheck.checkString("level"));
+        System.out.println(ReverseCheck.checkString("bas"));
 
     }
 }
